@@ -121,7 +121,7 @@ function mergeFiles(list, currentBundleOptions, FileExt, BeenHere, callback, ind
 
 MergeIntoFile.prototype.apply = function(compiler) {
   var options = this.options;
-  compiler.plugin('emit', function(compilation, callback) {
+  compiler.hooks.emit.tapAsync('emit', function(compilation, callback) {
     var count=0;
     var file2createCnt = 0;
     Bundles.forEach(function (filename) {
