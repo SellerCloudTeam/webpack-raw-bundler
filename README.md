@@ -2,11 +2,17 @@ A Webpack plugin to merge your files, unedited, into a single file.
 
 # Installation 
 
+For webpack 5:
+add this to devDependencies
 ```bash
-npm install webpack-raw-bundler
+"webpack-raw-bundler": "git+https://github.com/SellerCloudTeam/webpack-raw-bundler.git#95b1131a3ce055f56e61b6915f28904e06b982e7"
+```
+For webpack 4:
+```bash
+npm install -D webpack-raw-bundler
 ```
 ``` javascript
-var RawBundlerPlugin = require('webpack-raw-bundler');
+const RawBundlerPlugin = require('webpack-raw-bundler');
 ```
 
 # Usage
